@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Falexian – Ziegenmilchseife</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #EDD3AE;
+      color: white;
+      padding: 10px;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      margin-bottom: -180px;
+    }
+
+    .logo {
+      height: 200px;
+      margin-bottom: 200px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: -100px;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 40px;
+    }
+
+    nav ul li a {
+      color: #332316;
+      text-decoration: none;
+      font-size: 26px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: none;
+      color: #332316;
+    }
+
+    .produkt-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 20px;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .bildergalerie {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .bildergalerie img {
+      width: 400px;
+      height: 300px;
+      object-fit: contain;
+      border-radius: 12px;
+      background-color: #ffffff;
+    }
+
+    .pfeil {
+      background-color: transparent;
+      border: none;
+      font-size: 40px;
+      cursor: pointer;
+      color: #332316;
+      transition: transform 0.2s;
+    }
+
+    .pfeil:hover {
+      transform: scale(1.2);
+    }
+
+    .produkt-info {
+      max-width: 400px;
+    }
+
+    .produkt-info h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .produkt-info p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .kaufen-button {
+      background-color: #332316;
+      color: #fff5ee;
+      padding: 12px 24px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 30px;
+    }
+
+    .kaufen-button:hover {
+      background-color: #5a3f2b;
+    }
+
+    footer {
+      background-color: #332316;
+      color: #fff5ee;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 16px;
+      margin-top: 150px;
+    }
+
+    footer a {
+      color: #fff5ee;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+ .produkt-info .info {
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block; /* sicherstellen, dass es untereinander steht */
+}
+ 
+ .produkt-info .h1{
+                  margin-bottom: 4px;
+                 }
+
+
+.produkt-beschreibung {
+  max-width: 600px;
+  margin: 40px auto 0 auto; /* Abstand nach oben, zentriert */
+  padding: 0 20px;
+  text-align: left;
+  color: #332316;
+}
+
+.produkt-beschreibung h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.produkt-beschreibung p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+ .inhalte{
+                   list-style: none;
+                   padding:0;
+                   margin: 0 0 30px 0;
+                   display:inline-block;
+                   text-align: left;
+                  }
+ 
+   .inhalte li{
+                      text-indent:-1em;
+                      padding-left: 1em;
+                     } 
+
+ .inhalte li::before{
+                              content: "-";
+                              padding-right: 0.3em;
+                             }
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="../Bilder/Falexian-Logo.jpeg" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Startseite</a></li>
+          <li><a href="Falexian-Produkte.html">Produkte</a></li>
+          <li><a href="Falexian-Über uns.html">Über uns</a></li>
+          <li><a href="Falexian-Standorte.html">Standorte</a></li>
+          <li><a href="Falexian-Kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="produkt-container">
+      
+      <!-- Bildergalerie -->
+      <div class="bildergalerie">
+        <button class="pfeil" onclick="vorherigesBild()">‹</button>
+        <img id="hauptbild" alt="Produktbild" />
+        <button class="pfeil" onclick="naechstesBild()">›</button>
+      </div>
+
+    
+       
+
+     <div class="produkt-info">
+  <h1>Ziegenmilchseife</h1>
+  <p>6,29€ (62,9€ pro Kilo)</p>
+  <p class="info">Versandkosten: 5€</p>
+  <p class="info">Lieferzeit ca. 3–5 Werktage</p>
+
+<a href="Falexian-Virus.html">
+  <button class="kaufen-button">Jetzt kaufen</button>
+</a>
+</div>
+
+
+</div>
+       <div class="produkt-beschreibung">
+            
+      <h2>Produktbeschreibung</h2>
+    <p>Unsere Ziegenmilchseife wird aus natürlichen Inhaltsstoffen hergestellt. Sie ist besonders hautverträglich, da sie feuchtigkeitsspendende Fette und Vitamine enthält – ideal für empfindliche oder trockene Haut. Zudem wirkt sie durch ihren natürlichen pH-Wert sanft und unterstützt die Hautbalance.
+</p>
+      <h3> Inhaltsstoffe: </h3>
+    
+
+       <ul class="inhalte">
+          <li> Olivenöl </li>
+          <li> Kokosnussöl </li>
+          <li> Avocadoöl </li>
+          <li> destilliertes Wasser </li>
+          <li> Ziegenmilch </li>
+          <li> Natriumhydroxid </li>
+          <li> Honig </li>
+      </ul> 
+  
+</div>
+
+
+        
+
+
+
+  </main>
+
+  <footer>
+    <p>© 2025 Falexian UG (haftungsbeschränkt) – Alle Rechte vorbehalten</p>
+    <p><a href="mailto:info@falexian.com">info@falexian.com</a></p>
+  </footer>
+
+  <script>
+    const bilder = [
+      "../Bilder/Seife-Schachtel-frontal.png",
+      "../Bilder/Seife-frontal.png",
+      "../Bilder/Seife-angelehnt.png"
+    ];
+
+    let aktuellesBild = 0;
+
+    function zeigeBild(index) {
+      const hauptbild = document.getElementById("hauptbild");
+      hauptbild.src = bilder[index];
+    }
+
+    function vorherigesBild() {
+      aktuellesBild = (aktuellesBild - 1 + bilder.length) % bilder.length;
+      zeigeBild(aktuellesBild);
+    }
+
+    function naechstesBild() {
+      aktuellesBild = (aktuellesBild + 1) % bilder.length;
+      zeigeBild(aktuellesBild);
+    }
+
+    // ← Bild beim Laden setzen
+    window.addEventListener("DOMContentLoaded", function () {
+      zeigeBild(aktuellesBild);
+    });
+  </script>
+</body>
+</html>
